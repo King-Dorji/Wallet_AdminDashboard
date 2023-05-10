@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>    
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons&display=swap" rel="stylesheet">     
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">  
+    <script src=" https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js "></script>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+<nav>
+    <div class="logo-name">
+        <div class="logo">
+            <img src="./assets/logos/logo.svg">
+        </div>
+        <div class="nav_header">
+            <i class="uil uil-bars sidebar-toggle"></i>
+        </div>
+    </div>
+    <div class="menu-items">
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class="uil uil-apps"></i>
+                    <span class="link-name">Dashboard </span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">
+                    <i >
+                        <img width="20px" height="20px"  src="assets/icons/ic_wallet.svg">
+                    </i>
+                    <span class="link-name">My Wallet </span>
+                    <i class="uil uil-angle-down"></i>
+                </a>
+            </li>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i>
+                        
+                        </i>
+                        <span class="link-name">Add New</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i>
+                            
+                        </i>
+                        <span class="link-name">Card List</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i>
+                            
+                        </i>
+                        <span class="link-name">History</span>
+                    </a>
+                </li>
+            </ul>
+            <li>
+                <a href="#">
+                    <i>
+                        <img width="20px" height="20px"  src="assets/icons/ic_transcation.svg">
+                    </i>
+                    <span class="link-name">Transaction </span>
+                    <i class="uil uil-angle-right-b"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i>
+                        <img width="20px" height="20px" src="assets/icons/crypto.svg">
+                    </i>
+                    <span class="link-name">Crypto </span>
+                    <i class="uil uil-angle-right-b"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i>
+                        <img width="20px" height="20px" src="assets/icons/bank.svg">
+                    </i>
+                    <span class="link-name">Exchange</span>
+                    <i class="uil uil-angle-right-b"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i>  <img width="20px" height="20px" src="assets/icons/ic_setting.svg"></i>
+                    <span class="link-name">Settings </span>
+                    <i class="uil uil-angle-right-b"></i>
+                </a>
+            </li>
+            <div class="footer">
+                <div class="footer_content">
+                    <img width="200px" height="150px" src="assets/images/banner.svg">
+                </div>
+                <span class="footer_note">
+                    Kripton Crypto Admin Dashboard
+                </span>
+                <div>
+                    <i class="uil uil-copyright copyrights"></i>
+                    <span class="footer_note">
+                        2020 All Rights Reserved
+                    </span>
+                </div>
+            </div>
+        </ul>
+        
+    </div>
+
+</nav>
+
+
+<section class="dashboard">
+    <div class="top">
+        <div class="my-wallet">
+            <span>
+                My Wallets
+            </span>
+        </div>
+        <div class="search-box">
+            <i class="uil uil-search"></i> 
+            <input type="text" placeholder="Search here">
+        </div>
+        <div class="navigation-icon">
+            <img width="20px" height="20px"  src="assets/icons/ic_bell.svg">
+            <span class="navigation-icon-notification"></span>
+        </div>
+        <div class="navigation-icon">
+            <img width="20px" height="20px"  src="assets/icons/ic_chat.svg">
+            <span class="navigation-icon-notification"></span>
+        </div>
+        <div class="navigation-icon">
+            <img width="20px" height="20px"  src="assets/icons/bonus 1.svg">
+            <span class="navigation-icon-notification"></span>
+        </div>
+        <div class="avatar">
+            <div class="profile">
+                <img  src="./assets/images/daniela-mota-TxZXttbojmA-unsplash.jpeg">
+
+                <div class="user-details">
+                    <div>
+                        <span class="user-name">
+                           Diana Mota
+                        </span>
+                    </div>
+                    <div>
+                        <span class="user-type">
+                            Super Admin
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </div>
+</section>
+
+<main class="cards"> 
+    <div class="add-banner">
+        <div></div>
+        <div>
+            <a href="#">
+                <span class="btn-1"> + Add wallet</span>
+            </a>
+        </div>
+    </div>
+    <ul class="card-section">
+            <li class="card-wallet-1">
+                <div class="card-wallet-description">
+                    <p>Main Wallet</p>
+                    <h3>$45.500,12</h3>
+                </div>
+                <div class="card-wallet-bottom">
+                    <p class="card-wallet-bottom-number">
+                        444 221 224 ***
+                    </p>
+                    <div class="card-wallet-bottom-logo">
+                        <img src="./assets/logos/bubble.svg">
+                    </div>
+                </div>
+    
+                <div class="decoration-contours" width="387" height="100%" width="100%">
+                    <img src="./assets/images/wave_elements-left.svg">
+                </div>
+            </li>
+            <li class="card-wallet-2">
+                <div class="card-wallet-description">
+                    <p>XYZ Wallet</p>
+                    <h3>$250,5</h3>
+                </div>
+                <div class="card-wallet-bottom">
+                    <p class="card-wallet-bottom-number">
+                        444 221 224 ***
+                    </p>
+                    <div class="card-wallet-bottom-logo">
+                        <img src="./assets/logos/cresent.svg">
+                    </div>
+                </div>
+    
+                <div class="decoration-contours" width="387" height="100%" width="100%">
+                    <img src="./assets/images/wave_elements_right.svg">
+                </div>
+            </li>
+            <li class="card-wallet-3">
+                <div class="card-wallet-description">
+                    <p>Main Wallet</p>
+                    <h3>$45.500,12</h3>
+                </div>
+                <div class="card-wallet-bottom">
+                    <p class="card-wallet-bottom-number">
+                        444 221 224 ***
+                    </p>
+                    <div class="card-wallet-bottom-logo">
+                        <img src="./assets/logos/bubble.svg">
+                    </div>
+                </div>
+    
+                <div class="decoration-contours" width="387" height="100%" width="100%">
+                    <img src="./assets/images/wave_elements-left.svg">
+                </div>
+            </li>
+            <li class="card-wallet-4">
+                <div class="card-wallet-description">
+                    <p>XYZ Wallet</p>
+                    <h3>$250,5</h3>
+                </div>
+                <div class="card-wallet-bottom">
+                    <p class="card-wallet-bottom-number">
+                        444 221 224 ***
+                    </p>
+                    <div class="card-wallet-bottom-logo">
+                        <img src="./assets/logos/cresent.svg">
+                    </div>
+                </div>
+    
+                <div class="decoration-contours" width="387" height="100%" width="100%">
+                    <img src="./assets/images/wave_elements_right.svg">
+                </div>
+            </li>
+        </ul>
+        <div class="details-section">
+            <div class="head">
+                    <h3>
+                      Card Details
+                    </h3>
+                    <a href="#">
+                     Generate number
+                    </a>
+                     <a href="#">
+                        Edit
+                    </a>
+            </div>
+            <div class="analytics">
+                <div class="left-data">
+                    <div class="card-details">
+                        <p>Card Name</p>
+                        <span>Main Balance</span>
+                        <p class="date-valid">
+                            Valid Date
+                        </p>
+                         <span>
+                              08/21
+                        </span>
+                         <p class="card-num">
+                              Card Number
+                        </p>
+                         <span>
+                              **** **** **** 1234
+                        </span>
+                    </div>
+                    <div class="bank-user">
+                        <p>
+                            Bank Name
+                        </p>
+                        <span>
+                            ABC Center Bank
+                        </span>
+                        <p>
+                            Card Holder
+                        </p>
+                        <span>
+                            Diana Mota
+                        </span>
+                        <div>
+                            <p>
+                                Card Theme
+                            </p>
+                            <div class="options">
+                                <div class="themes">
+                                    <!-- <i class="uil uil-check-circle"></i> -->
+                                </div>
+                                <div class="themes2">
+                                </div>
+                                <div class="themes3">
+                                </div>
+                                <div class="themes4">
+                                </div>
+                                <div class="themes5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-data">
+                        <div>
+                            <span>
+                                Monthly Limits
+                            </span>
+                            <div class="doughnut-chats">
+                                <div class="canvas-con">
+                                    <div class="themes">
+                                        <!-- <i class="uil uil-check-circle"></i> -->
+                                    </div>
+                                    <div class="target">  
+                                        <div id="tierPointsValue" class="target-chart" data-percent="">                   
+                                          <div class="target-percentage"> 
+                                            <div id="totalPoints" class="totalTierPoints" value="50" >12750</div>  
+                                            <div class="points-random">TOTAL POINTS</div>
+                                          </div>
+                                        </div>  
+                                      </div>   
+                                    <h3>Main Limits</h3>
+                                    <p>$10,000</p>
+                                </div>
+                                <div class="canvas-con">
+                                    <div class="themes4">
+                                        <!-- <i class="uil uil-check-circle"></i> -->
+                                    </div>
+                                    <!-- <div class="canvas-con-inner">
+                                        <canvas id="mychart" height="250px"></canvas>
+                                    </div>
+                                    <div id="my-legend-con" class="legend-con"></div> -->
+                                    <h3>Seconds</h3>
+                                    <p>$500</p>
+                                </div>
+                                <div class="canvas-con">
+                                    <div class="themes5">
+                                        <!-- <i class="uil uil-check-circle"></i> -->
+                                    </div>
+                                    <!-- <div class="canvas-con-inner">
+                                        <canvas id="mychart" height="250px"></canvas>
+                                    </div>
+                                    <div id="my-legend-con" class="legend-con"></div> -->
+                                    <h3>Others</h3>
+                                    <p>$100</p>
+                                </div>
+                                <!-- <div class="canvas-con">
+                                    <div class="canvas-con-inner">
+                                        <canvas id="mychart" height="250px"></canvas>
+                                    </div>
+                                    <div id="my-legend-con" class="legend-con"></div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="chart">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table-data">
+            <div class="details-section2">
+                <div class="analytics-2">
+                    <div class="head2">
+                        <ul>
+                            <li>
+                                <h3>
+                                    Overview balance
+                                </h3>
+                                <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                            </li>
+                           
+                        </ul>
+                        <div class="btn"> 
+                            <a href="#">
+                                <span class="btn-2"> weekly (2020) <i class="uil uil-angle-down"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="numericals">
+                        <div class="figures">
+                            <h3 class="nums">Last Week</h3>
+                            <span class="figs">$563,443</span>
+                        </div>
+                        <div class="last">
+                            <h3 class="number">$557,235.31</h3>
+                            <span class="modul">7%  </span>
+                            <img src="./assets/icons//arrow_up.svg">
+                        </div>
+                    </div>
+                    <div class="canvas-wrapper">
+                        <canvas id="myCanvas">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="wallet-activity">
+                <div class="order">
+                    <div class="table-head">
+                        <h3>Wallet Activity</h3>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Lorem ipsum dolo sit amet, consectetur</th>
+                                <th>Monthly</th>
+                                <th>weekly</th>
+                                <th>
+                                    <a href="#">
+                                        <span class="now-btn">Today </span>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="arrow-down">     
+                                        <img src="./assets/icons/arrow-green.svg">
+                                    </div>
+                                    <p>Withdraw</p>
+                                </td>
+                                <td>06:24:45 AM</td>
+                                <td>-$542</td>
+                                <td><span class="pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="arrow-down">     
+                                        <img src="./assets/icons/arrow-navy.svg">
+                                    </div>
+                                    <p>Topup</p>
+                                </td>
+                                <td>06:24:45 AM</td>
+                                <td>+$5,553</td>
+                                <td><span class="completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="arrow-down">     
+                                        <img src="./assets/icons/arrow-green.svg">
+                                    </div>
+                                    <p>Withdraw</p>
+                                </td>
+                                <td>06:24:45 AM</td>
+                                <td>-$912</td>
+                                <td><span class="canceled">Canceled</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="arrow-down">     
+                                        <img src="./assets/icons/arrow-navy.svg">
+                                    </div>
+                                    <p>Topup</p>
+                                </td>
+                                <td>06:24:45 AM</td>
+                                <td>+$5,553</td>
+                                <td><span class="completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="arrow-down">     
+                                        <img src="./assets/icons/arrow-navy.svg">
+                                    </div>
+                                    <p>Topup</p>
+                                </td>
+                                <td>06:24:45 AM</td>
+                                <td>+$5,553</td>
+                                <td><span class="completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="arrow-down">     
+                                        <img src="./assets/icons/arrow-green.svg">
+                                    </div>
+                                    <p>Withdraw</p>
+                                </td>
+                                <td>06:24:45 AM</td>
+                                <td>-$912</td>
+                                <td><span class="canceled">Canceled</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
